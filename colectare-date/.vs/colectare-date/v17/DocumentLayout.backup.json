@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\controllers\\colectarecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\controllers\\colectarecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\models\\colectare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\models\\colectare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\migrations\\20250312170358_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\migrations\\20250312170358_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 255,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColectareController.cs",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\ColectareController.cs",
+              "RelativeDocumentMoniker": "colectare-date\\Controllers\\ColectareController.cs",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\ColectareController.cs*",
+              "RelativeToolTip": "colectare-date\\Controllers\\ColectareController.cs*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:15:23.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Program.cs",
+              "RelativeDocumentMoniker": "colectare-date\\Program.cs",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Program.cs",
+              "RelativeToolTip": "colectare-date\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:51:10.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Colectare.cs",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Models\\Colectare.cs",
+              "RelativeDocumentMoniker": "colectare-date\\Models\\Colectare.cs",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Models\\Colectare.cs",
+              "RelativeToolTip": "colectare-date\\Models\\Colectare.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:59:40.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250312170358_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Migrations\\20250312170358_InitialCreate.cs",
+              "RelativeDocumentMoniker": "colectare-date\\Migrations\\20250312170358_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Migrations\\20250312170358_InitialCreate.cs",
+              "RelativeToolTip": "colectare-date\\Migrations\\20250312170358_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T17:03:58.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "colectare-date\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Properties\\launchSettings.json",
+              "RelativeToolTip": "colectare-date\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T17:47:30.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "colectare-date\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "colectare-date\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T16:50:02.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\appsettings.json",
+              "RelativeDocumentMoniker": "colectare-date\\appsettings.json",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\appsettings.json",
+              "RelativeToolTip": "colectare-date\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-12T16:48:46.135Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 75,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
