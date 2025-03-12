@@ -3,6 +3,7 @@
 #include <WiFiClient.h>
 #include <SPI.h>
 #include <MFRC522.h>
+#include <time.h> 
 
 #define STASSID "OMiLAB"   
 #define STAPSK "digifofulbs" 
@@ -14,12 +15,32 @@ MFRC522 rfid(SS_PIN, RST_PIN);
 WiFiClient client;
 HTTPClient http;
 
-const char* serverUrl = "http://10.14.10.113:3000/api/data";
+const char* serverUrl = "http://10.14.10.37:5151/api/colectari";
 
 // Stocare ID-uri cand WiFi nu functioneaza
 #define MAX_SAVED_IDS 10
 String idSalvate[MAX_SAVED_IDS];
 int nrSalvate = 0;
+
+void setupTime() {
+    configTime(0, 0, "pool.ntp.org");  // Conecteaza automat la serverul NTP
+    Serial.print("Sincronizare timp...");
+
+    while (time(nullptr) < 100000) {  // Asteapta sincronizarea
+        Serial.print(".");
+        delay(500);
+    }
+    Serial.println(" OK!");
+}
+
+String getCurrentTime() {
+    time_t now = time(nullptr);  // Obtine timpul curent
+    struct tm* timeinfo = localtime(&now);  // Converteste în format local
+
+    char buffer[25];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%dT%H:%M:%S", timeinfo); // Format ISO 8601
+    return String(buffer);
+}
 
 void setup() {
   Serial.begin(115200);
@@ -36,6 +57,7 @@ void setup() {
   Serial.println("\nConectat la WiFi!");
   Serial.print("IP Address: ");
   Serial.println(WiFi.localIP());
+  setupTime();
 }
 
 void loop() {
@@ -46,10 +68,10 @@ void loop() {
   for (byte i = 0; i < rfid.uid.size; i++) {
     tag += String(rfid.uid.uidByte[i], HEX);
   }
-  Serial.println("ID Tag: " + tag);
+  Serial.println("ID Tag: " + tag + " DATA COLECTARII: " +  getCurrentTime());
 
   // Formateaza datele JSON
-  String jsonPayload = "{\"id\": \"" + tag + "\", \"name\": \"Magda si Edi\"}";
+  String jsonPayload = "{\"PubelaId\": \"" + tag + "\", \"TimpColectare\": \"" + getCurrentTime() + "\"}";
 
   if (WiFi.status() == WL_CONNECTED) {
     http.begin(client, serverUrl);
