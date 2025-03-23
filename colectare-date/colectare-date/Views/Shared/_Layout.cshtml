@@ -23,6 +23,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Acasa</a>
                         </li>
+                        @if (Context.Session.GetString("admin") != "true")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Login" asp-action="Index">Admin</a>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Cetatean" asp-action="Adauga">Adauga</a>
                         </li>
@@ -32,6 +38,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="PubelaCetateni" asp-action="AtribuirePubela">Atribuie Pubela</a>
                         </li>
+                        @if (Context.Session.GetString("admin") == "true")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" asp-controller="Login" asp-action="Logout">Logout</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

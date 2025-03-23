@@ -16,6 +16,13 @@
             <p>
                 Proiectul combina tehnologia si responsabilitatea ecologica pentru o lume mai curata 🌍♻️
             </p>
+            @if (Context.Session.GetString("admin") != "true")
+            {
+                <p>
+                <p class="lead">Pentru a accesa functionalitatile aplicatiei, autentifica-te ca administrator.</p>
+                <a class="btn btn-primary" asp-controller="Login" asp-action="Index">AUTENTIFICARE ADMIN</a>
+                </p>
+            }
         </div>
     </div>
 
