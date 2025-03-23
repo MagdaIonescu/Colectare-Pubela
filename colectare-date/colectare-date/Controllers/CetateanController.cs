@@ -2,6 +2,8 @@
 using colectare_date.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using colectare_date.ViewModels;
+
 
 namespace colectare_date.Controllers
 {
@@ -53,7 +55,35 @@ namespace colectare_date.Controllers
         public async Task<IActionResult> ListaCetatenilor()
         {
             var cetateni = await context.Cetateni.ToListAsync();
-            return View(cetateni);
+            var atribuiri = await context.PubeleCetateni.ToListAsync();
+            var model = cetateni.Select(c => new CetateanCuPubeleViewModel
+            {
+                Cetatean = c,
+                Atribuiri = atribuiri.Where(a=>a.Cetatean.Id==c.Id).ToList(),
+            }).ToList();
+
+            return View(model);
         }
+
+        public async Task<IActionResult> Colectari(int id)
+        {
+            var cetatean = await context.Cetateni.FindAsync(id);
+
+            if (cetatean == null)
+                return NotFound();
+
+            var pubeleId = await context.PubeleCetateni
+                .Where(pc => pc.CetateanId == id)
+                .Select(pc => pc.PubelaId)
+                .ToListAsync();
+
+            var colectari = await context.Colectari
+                .Where(c => pubeleId.Contains(c.PubelaId))
+                .ToListAsync();
+
+            ViewBag.Cetatean = cetatean;
+            return View(colectari);
+        }
+
     }
 }

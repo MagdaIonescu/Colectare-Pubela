@@ -11,11 +11,11 @@ namespace colectare_date.Models
         [Required]
         [ForeignKey("Pubela")]
         public string PubelaId { get; set; }
-        public Pubela Pubela { get; set; }
+        public Pubela? Pubela { get; set; }
 
         [Required]
         public int CetateanId { get; set; }
-        public Cetatean Cetatean { get; set; }  
+        public Cetatean? Cetatean { get; set; }  
 
         [Required]
         public string Adresa { get; set; }
