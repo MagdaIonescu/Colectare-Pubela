@@ -1,0 +1,41 @@
+﻿@model IEnumerable<colectare_date.Models.Cetatean>
+@{
+    ViewData["Title"] = "Lista Cetatenilor";
+}
+
+<h2>LISTA CETATENILOR</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nume</th>
+            <th>Prenume</th>
+            <th>Email</th>
+            <th>CNP</th>
+            <th>Actiuni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cetatean in Model)
+        {
+            <tr>
+                <td>@cetatean.Nume</td>
+                <td>@cetatean.Prenume</td>
+                <td>@cetatean.Email</td>
+                <td>@cetatean.CNP</td>
+                <td>
+                    <form asp-action="Sterge" asp-route-id="@cetatean.Id" method="post" onsubmit="return confirm('Esti sigur ca vrei sa stergi acest cetaten?');">
+                        <button type="submit" class="btn btn-danger btn-sm">Sterge</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

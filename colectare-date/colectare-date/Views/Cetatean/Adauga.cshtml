@@ -1,0 +1,32 @@
+﻿@model colectare_date.Models.Cetatean
+
+@{
+    ViewData["Title"] = "Adauga Cetatean";
+}
+
+<h2>ADAUGARE CETATEAN</h2>
+
+<form asp-action="Adauga" method="post">
+    <div class="form-group">
+        <label>Nume</label>
+        <input asp-for="Nume" class="form-control" />
+        <span asp-validation-for="Nume" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Prenume</label>
+        <input asp-for="Prenume" class="form-control" />
+        <span asp-validation-for="Prenume" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>CNP</label>
+        <input asp-for="CNP" class="form-control" />
+        <span asp-validation-for="CNP" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">ADAUGA</button>
+</form>
