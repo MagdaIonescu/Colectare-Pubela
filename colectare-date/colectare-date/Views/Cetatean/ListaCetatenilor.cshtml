@@ -1,4 +1,4 @@
-﻿@model IEnumerable<colectare_date.Models.Cetatean>
+﻿@model IEnumerable<colectare_date.ViewModels.CetateanCuPubeleViewModel>
 @{
     ViewData["Title"] = "Lista Cetatenilor";
 }
@@ -7,8 +7,13 @@
 
 @if (TempData["SuccessMessage"] != null)
 {
-    <div class="alert alert-success">
-        @TempData["SuccessMessage"]
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
     </div>
 }
 
@@ -19,19 +24,43 @@
             <th>Prenume</th>
             <th>Email</th>
             <th>CNP</th>
+            <th>Pubele Atribuite </th>
             <th>Actiuni</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var cetatean in Model)
+        @foreach (var item in Model)
         {
             <tr>
-                <td>@cetatean.Nume</td>
-                <td>@cetatean.Prenume</td>
-                <td>@cetatean.Email</td>
-                <td>@cetatean.CNP</td>
                 <td>
-                    <form asp-action="Sterge" asp-route-id="@cetatean.Id" method="post" onsubmit="return confirm('Esti sigur ca vrei sa stergi acest cetaten?');">
+                    <a asp-controller="Cetatean" asp-action="Colectari" asp-route-id="@item.Cetatean.Id">
+                            @item.Cetatean.Nume
+                    </a>
+                </td>
+                <td>
+                    <a asp-controller="Cetatean" asp-action="Colectari" asp-route-id="@item.Cetatean.Id">
+                        @item.Cetatean.Prenume
+                    </a>
+                </td>
+                <td>@item.Cetatean.Email</td>
+                <td>@item.Cetatean.CNP</td>
+                <td>
+                    @if (item.Atribuiri != null && item.Atribuiri.Any())
+                    {
+                        <ul>
+                            @foreach (var p in item.Atribuiri)
+                            {
+                                @p.PubelaId
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <span>Nicio pubela atribuita</span>
+                    }
+                </td>
+                <td>
+                    <form asp-action="Sterge" asp-route-id="@item.Cetatean.Id" method="post" onsubmit="return confirm('Esti sigur ca vrei sa stergi acest cetaten?');">
                         <button type="submit" class="btn btn-danger btn-sm">Sterge</button>
                     </form>
                 </td>

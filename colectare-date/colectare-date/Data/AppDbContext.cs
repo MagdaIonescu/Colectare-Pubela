@@ -18,13 +18,14 @@ namespace colectare_date.Data
                 .HasOne(pc => pc.Cetatean)
                 .WithMany()
                 .HasForeignKey(pc => pc.CetateanId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<PubelaCetateni>()
                 .HasOne(pc => pc.Pubela)
                 .WithMany()
                 .HasForeignKey(pc => pc.PubelaId)
                 .OnDelete(DeleteBehavior.Restrict);
+
         }
     }
 }
