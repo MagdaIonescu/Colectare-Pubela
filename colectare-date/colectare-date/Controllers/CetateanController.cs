@@ -19,6 +19,8 @@ namespace colectare_date.Controllers
         [HttpGet]
         public IActionResult Adauga()
         {
+            if (HttpContext.Session.GetString("admin") != "true")
+                return RedirectToAction("Index", "Login");
             return View();
         }
 
@@ -54,6 +56,9 @@ namespace colectare_date.Controllers
         [HttpGet]
         public async Task<IActionResult> ListaCetatenilor()
         {
+            if (HttpContext.Session.GetString("admin") != "true")
+                return RedirectToAction("Index", "Login");
+
             var cetateni = await context.Cetateni.ToListAsync();
             var atribuiri = await context.PubeleCetateni.ToListAsync();
             var model = cetateni.Select(c => new CetateanCuPubeleViewModel

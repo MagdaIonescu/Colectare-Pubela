@@ -11,6 +11,7 @@ namespace colectare_date.Data
         public DbSet<Pubela> Pubele { get; set; }
         public DbSet<PubelaCetateni> PubeleCetateni { get; set; }
         public DbSet<Colectare> Colectari { get; set; }
+        public DbSet<Utilizator> Utilizatori { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

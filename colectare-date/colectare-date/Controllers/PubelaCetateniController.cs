@@ -17,6 +17,9 @@ namespace colectare_date.Controllers
         [HttpGet]
         public async Task<IActionResult> AtribuirePubela()
         {
+            if (HttpContext.Session.GetString("admin") != "true")
+                return RedirectToAction("Index", "Login");
+
             var cetateni = await context.Cetateni.ToListAsync();
 
             var pubeleAtribuite = await context.PubeleCetateni
@@ -44,7 +47,6 @@ namespace colectare_date.Controllers
             return View();
         }
 
-        [HttpPost]
         [HttpPost]
         public async Task<IActionResult> AtribuirePubela(PubelaCetateni model)
         {
