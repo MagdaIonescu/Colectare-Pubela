@@ -1,9 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using colectare_date.Data;
+using colectare_date.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace colectare_date.Controllers
 {
     public class LoginController : Controller
     {
+        private readonly AppDbContext context;
+        public LoginController(AppDbContext context)
+        {
+            this.context = context;
+        }
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -11,9 +20,11 @@ namespace colectare_date.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(string email, string parola)
+        public async Task<IActionResult> Index(string email, string parola)
         {
-            if (email == "admin@proiect.ro" && parola == "admin123")
+            var utilizator = await context.Utilizatori.FirstOrDefaultAsync(u => u.Email == email && u.Parola == parola);
+
+            if (utilizator != null)
             {
                 HttpContext.Session.SetString("admin", "true");
                 return RedirectToAction("Index", "Home");
