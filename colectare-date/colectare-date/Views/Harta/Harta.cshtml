@@ -13,10 +13,31 @@
 <script>
     var map = L.map('map').setView([45.79, 24.15], 13);
 
+
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+
+    // start
+    L.marker([45.7315361, 24.1779393], {
+        icon: L.icon({
+            iconUrl: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+            iconSize: [32, 32],
+            iconAnchor: [16, 32]
+        })
+    }).addTo(map)
+      .bindPopup("Start - Strada Selimbarului 90");
+
+    // stop
+    L.marker([45.7877059, 24.0247875], {
+        icon: L.icon({
+            iconUrl: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
+            iconSize: [32, 32],
+            iconAnchor: [16, 32]
+        })
+    }).addTo(map)
+      .bindPopup("Stop - DN1 FN, Cristian");
 
     @foreach (var c in Model)
     {

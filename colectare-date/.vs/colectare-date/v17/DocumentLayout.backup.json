@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\views\\harta\\harta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\views\\harta\\harta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -31,12 +35,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Harta.cshtml",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\Harta\\Harta.cshtml",
+              "RelativeDocumentMoniker": "colectare-date\\Views\\Harta\\Harta.cshtml",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\Harta\\Harta.cshtml",
+              "RelativeToolTip": "colectare-date\\Views\\Harta\\Harta.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowCcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T16:22:07.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "colectare-date\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "colectare-date\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAkwEAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-02T20:16:26.629Z",
               "EditorCaption": ""
