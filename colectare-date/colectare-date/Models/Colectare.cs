@@ -11,6 +11,9 @@ namespace colectare_date.Models
         public string PubelaId { get; set; }
 
         [Required]
-        public DateTime TimpColectare { get; set; }  
+        public DateTime TimpColectare { get; set; }
+        public string Adresa { get; set; }
+        public float Longitudine { get; set; }
+        public float Latitudine { get; set; }
     }
 }
