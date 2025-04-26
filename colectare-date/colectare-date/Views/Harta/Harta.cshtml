@@ -1,50 +1,133 @@
-﻿@model List<colectare_date.Models.Colectare>
+﻿@model colectare_date.ViewModels.RutaOptimizataViewModel
 
 @{
     ViewData["Title"] = "Harta Colectari";
 }
 
-<h2>HARTA COLECTARILOR DIN 15.10.2024</h2>
-<div id="map""></div>
+<div class="container-mare">
+    <div class="rezultate-container">
+        <h2>Rezultate Optimizare</h2>
+        <ul>
+            <li><strong>Distanta traseu neoptimizat:</strong> @Model.DistantaTraseuNeoptimizat metri</li>
+            <li><strong>Distanta traseu optimizat:</strong> @Model.DistantaTraseuOptimizat metri</li>
+            <li><strong>Diferenta de distanta parcursa dintre traseul parcurs de masina si noul traseu optimizat:</strong> @Model.DiferentaDistanta metri</li>
+            <li><strong>Timpul de parcurgere al noului traseu optimizat:</strong> @Model.TimpEstimativ minute</li>
+        </ul>
+    </div>
+
+    <div class="map-section">
+        <h2>HARTA TRASEULUI NEOPTIMIZAT DIN 15.10.2024</h2>
+        <div id="mapUnoptimized" class="map"></div>
+    </div>
+
+    <div class="map-section">
+        <h2>HARTA TRASEULUI OPTIMIZAT DIN 15.10.2024</h2>
+        <div id="mapOptimized" class="map"></div>
+    </div>
+</div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 
 <script>
-    var map = L.map('map').setView([45.79, 24.15], 13);
+    function creeazaHarta(idDiv, puncte, tipPuncte) {
+        var harta = L.map(idDiv).setView([45.79, 24.15], 13);
 
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(harta);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+        //start
+        L.marker([45.7315361, 24.1779393], {
+            icon: L.icon({
+                iconUrl: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                iconSize: [32, 32],
+                iconAnchor: [16, 32]
+            })
+        }).addTo(harta).bindPopup("Start - Strada Selimbarului 90");
 
-    // start
-    L.marker([45.7315361, 24.1779393], {
-        icon: L.icon({
-            iconUrl: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
-            iconSize: [32, 32],
-            iconAnchor: [16, 32]
-        })
-    }).addTo(map)
-      .bindPopup("Start - Strada Selimbarului 90");
+        //stop
+        L.marker([45.7877059, 24.0247875], {
+            icon: L.icon({
+                iconUrl: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
+                iconSize: [32, 32],
+                iconAnchor: [16, 32]
+            })
+        }).addTo(harta).bindPopup("Stop - DN1 FN, Cristian");
 
-    // stop
-    L.marker([45.7877059, 24.0247875], {
-        icon: L.icon({
-            iconUrl: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
-            iconSize: [32, 32],
-            iconAnchor: [16, 32]
-        })
-    }).addTo(map)
-      .bindPopup("Stop - DN1 FN, Cristian");
+        for (var i = 0; i < puncte.length; i++) {
+            L.marker(puncte[i], {
+                icon: L.divIcon({
+                    className: 'custom-div-icon',
+                    html: '<div>' + (i + 1) + '</div>',
+                    iconSize: [30, 30],
+                    iconAnchor: [15, 30]
+                })
+            }).addTo(harta).bindPopup(tipPuncte[i]);
+        }
 
-    @foreach (var c in Model)
-    {
-        <text>
-                L.marker([@c.Latitudine.ToString(System.Globalization.CultureInfo.InvariantCulture), @c.Longitudine.ToString(System.Globalization.CultureInfo.InvariantCulture)])
-                    .addTo(map)
-                    .bindPopup("@c.Adresa <br>@c.TimpColectare.ToString("HH:mm:ss")");
-        </text>
+        var traseu = [L.latLng(45.7315361, 24.1779393), ...puncte, L.latLng(45.7877059, 24.0247875)];
+        L.Routing.control({
+            waypoints: traseu,
+            routeWhileDragging: false,
+            addWaypoints: false,
+            draggableWaypoints: false,
+            createMarker: function () { return null; },
+            show: false,
+            lineOptions: {
+                styles: [{ color: 'green', weight: 4 }]
+            }
+        }).addTo(harta);
+
+        adaugaLegenda(harta);
     }
+
+    function adaugaLegenda(harta) {
+        var legenda = L.control({ position: 'bottomright' });
+
+        legenda.onAdd = function () {
+            var div = L.DomUtil.create('div', 'legend');
+            div.innerHTML += '<i style="background:green"></i> Start<br>';
+            div.innerHTML += '<i style="background:red"></i> Stop<br>';
+            div.innerHTML += '<i style="background:#2E86C1"></i> Punct colectare';
+            return div;
+        };
+
+        legenda.addTo(harta);
+    }
+
+    var puncteNeoptimizat = [
+    @foreach (var c in Model.Colectari)
+    {
+        <text>L.latLng(@c.Latitudine.ToString(System.Globalization.CultureInfo.InvariantCulture), @c.Longitudine.ToString(System.Globalization.CultureInfo.InvariantCulture)),</text>
+    }
+    ];
+
+    var descrieriNeoptimizat = [
+    @foreach (var c in Model.Colectari)
+    {
+        <text>"@c.Adresa",</text>
+    }
+    ];
+
+    var puncteOptimizat = [
+    @foreach (var c in Model.ColectariOptimizate)
+    {
+        <text>L.latLng(@c.Latitudine.ToString(System.Globalization.CultureInfo.InvariantCulture), @c.Longitudine.ToString(System.Globalization.CultureInfo.InvariantCulture)),</text>
+    }
+    ];
+
+    var descrieriOptimizat = [
+    @foreach (var c in Model.ColectariOptimizate)
+    {
+        <text>"@c.Adresa",</text>
+    }
+    ];
+
+    creeazaHarta('mapUnoptimized', puncteNeoptimizat, descrieriNeoptimizat);
+    creeazaHarta('mapOptimized', puncteOptimizat, descrieriOptimizat);
 </script>
+

@@ -4,30 +4,32 @@
     ViewData["Title"] = "Colectari";
 }
 
-<h2>COLECTARILE PENTRU CETATEANUL: </h2>
-<h3>@cetatean.Nume @cetatean.Prenume</h3>
+<div class="tabel-container">
+    <h2>COLECTARILE PENTRU CETATEANUL: </h2>
+    <h3>@cetatean.Nume @cetatean.Prenume</h3>
 
-@if (!Model.Any())
-{
-    <p style="color:red;">Acest cetatean nu are nicio colectare inregistrara.</p>
-}
-else
-{
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Pubela</th>
-                <th>Timp Colectare</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var c in Model)
-            {
+    @if (!Model.Any())
+    {
+        <p>Acest cetatean nu are nicio colectare inregistrara.</p>
+    }
+    else
+    {
+        <table class="table table-bordered">
+            <thead>
                 <tr>
-                    <td>@c.PubelaId</td>
-                    <td>@c.TimpColectare</td>
+                    <th>Pubela</th>
+                    <th>Timp Colectare</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-}
+            </thead>
+            <tbody>
+                @foreach (var c in Model)
+                {
+                    <tr>
+                        <td>@c.PubelaId</td>
+                        <td>@c.TimpColectare</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
