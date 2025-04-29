@@ -27,7 +27,7 @@ namespace colectare_date.Controllers
             if (utilizator != null)
             {
                 HttpContext.Session.SetString("admin", "true");
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Alerte");
             }
 
             ViewBag.Eroare = "Email sau parola gresite.";

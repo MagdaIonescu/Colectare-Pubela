@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/colectare_date.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,32 +22,52 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Acasa</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="fas fa-home"></i> Acasa
+                            </a>
                         </li>
                         @if (Context.Session.GetString("admin") != "true")
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Login" asp-action="Index">Conectare</a>
+                                <a class="nav-link" asp-controller="Login" asp-action="Index">
+                                    <i class="fas fa-sign-in-alt"></i> Conectare
+                                </a>
                             </li>
                         }
                         @if (Context.Session.GetString("admin") == "true")
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Cetatean" asp-action="Adauga">Adauga</a>
+                                <a class="nav-link" asp-area="" asp-controller="Cetatean" asp-action="Adauga">
+                                    <i class="fas fa-user-plus"></i> Adauga
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Cetatean" asp-action="ListaCetatenilor">Cetateni</a>
+                                <a class="nav-link" asp-area="" asp-controller="Cetatean" asp-action="ListaCetatenilor">
+                                    <i class="fas fa-users"></i> Cetateni
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="PubelaCetateni" asp-action="AtribuirePubela">Atribuie Pubela</a>
+                                <a class="nav-link" asp-area="" asp-controller="PubelaCetateni" asp-action="AtribuirePubela">
+                                    <i class="fas fa-trash"></i> Atribuie Pubela
+                                </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Harta" asp-action="Harta">Harta</a>
+                                <a class="nav-link" asp-controller="Harta" asp-action="Harta">
+                                    <i class="fas fa-map-marked-alt"></i> Harta
+                                </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Login" asp-action="Logout">Deconectare</a>
+                                <a class="nav-link" asp-area="" asp-controller="Alerte" asp-action="Index">
+                                    <i class="fas fa-bell"></i> Alerte
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Login" asp-action="Logout">
+                                    <i class="fas fa-sign-out-alt"></i> Deconectare
+                                    </a>
                             </li>
                         }
                     </ul>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Alerte adrese gresite";
+}
+
+<h1>Alerte de Colectare</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (Model != null && Model.Count > 0)
+{
+    foreach (var alerta in Model)
+    {
+        <div class="alert alert-danger alert-custom" role="alert">
+            <i class="fas fa-exclamation-triangle icon-alert"></i>
+            <strong>Pubela:</strong> @alerta.PubelaId <br />
+            <strong>Adresa colectare:</strong> @alerta.AdresaColectata <br />
+            <strong>Adresa din contract:</strong> @alerta.AdresaContract <br />
+            <strong>Data colectarii:</strong> @alerta.TimpColectare.ToString("dd-MM-yyyy HH:mm")
+            <form asp-action="RezolvareAlerta" method="post" style="margin-top: 10px;">
+                <input type="hidden" name="id" value="@alerta.Id" />
+                <button type="submit" class="btn btn-success btn-sm">
+                    <i class="fas fa-check"></i> Alerta rezolvata
+                </button>
+            </form>
+        </div>
+    }
+}
+else
+{
+    <div class="alert alert-success alert-custom" role="alert">
+        <i class="fas fa-check-circle icon-success"></i>
+        Nu exista alerte de colectare!
+    </div>
+}
+<div class="inapoi-container">
+    <a href="~/Home/Index" class="btn btn-primary btn-inapoi">
+        <i class="fas fa-home"></i> Inapoi acasa
+    </a>
+</div>

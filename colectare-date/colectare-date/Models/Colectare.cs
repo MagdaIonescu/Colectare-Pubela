@@ -15,5 +15,6 @@ namespace colectare_date.Models
         public string Adresa { get; set; }
         public float Longitudine { get; set; }
         public float Latitudine { get; set; }
+        public bool EsteRezolvata { get; set; } = false;
     }
 }
