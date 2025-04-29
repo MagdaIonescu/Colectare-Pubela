@@ -337,3 +337,48 @@ main {
     margin-right: 8px;
     border-radius: 50%;
 }
+
+.alert-custom {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.icon-alert {
+    color: #dc3545; /* rosu */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.icon-success {
+    color: #28a745; 
+    margin-right: 10px;
+    font-size: 20px;
+}
+.alert-custom {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.icon-alert {
+    color: #dc3545; 
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.icon-success {
+    color: #28a745;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.inapoi-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-inapoi {
+    font-size: 18px;
+    padding: 10px 20px;
+}
