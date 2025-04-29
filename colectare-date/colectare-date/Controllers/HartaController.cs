@@ -16,6 +16,9 @@ namespace colectare_date.Controllers
         }
         public IActionResult Harta()
         {
+            if (HttpContext.Session.GetString("admin") != "true")
+                return RedirectToAction("Index", "Login");
+
             var dataCautata = new DateTime(2024, 10, 15);
             var colectari = context.Colectari
                 .Where(c => c.TimpColectare.Date == dataCautata)
@@ -116,53 +119,5 @@ namespace colectare_date.Controllers
             }
             return ruta;
         }
-
-        private double CalculeazaDistantaTotala(List<Colectare> colectari, int[,] matrice)
-        {
-            double distanta = 0;
-            int current = 0;
-
-            for (int i = 0; i < colectari.Count; i++)
-            {
-                int next = i + 1; 
-                distanta += matrice[current, next];
-                current = next;
-            }
-
-            int stopIndex = matrice.GetLength(0) - 1; 
-            distanta += matrice[current, stopIndex];
-
-            return distanta;
-        }
-
-        public IActionResult RutaOptimizata()
-        {
-            var colectari = context.Colectari
-                .Where(c => c.TimpColectare.Date == new DateTime(2024, 10, 15))
-                .ToList();
-
-            var matrice = IncarcaMatrice();
-            var ruta = CalculeazaRutaOptimizata(matrice);
-
-            var rutaFaraStartStop = ruta.Where(index => index > 0 && index <= colectari.Count).ToList();
-            var colectariOrdonate = rutaFaraStartStop
-                .Select(index => colectari[index - 1])
-                .ToList();
-
-            double distantaOptimizata = CalculeazaDistantaTotala(colectariOrdonate, matrice);
-            double distantaReala = CalculeazaDistantaTotala(colectari, matrice);
-
-            var model = new RutaOptimizataViewModel
-            {
-                Colectari = colectari,
-                ColectariOptimizate = colectariOrdonate,
-                DistantaTraseuOptimizat = distantaOptimizata,
-                DistantaTraseuNeoptimizat = distantaReala,
-                TimpEstimativ = colectariOrdonate.Count
-            };
-
-            return View(model);
-        }
-
     }
 }
