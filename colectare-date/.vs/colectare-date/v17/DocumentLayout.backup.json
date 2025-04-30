@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\controllers\\hartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\controllers\\hartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\views\\cetatean\\listacetatenilor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\views\\cetatean\\listacetatenilor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\views\\cetatean\\colectari.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\views\\cetatean\\colectari.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\views\\pubelacetateni\\atribuirepubela.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\views\\pubelacetateni\\atribuirepubela.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\controllers\\colectarecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\controllers\\colectarecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\controllers\\pubelacetatenicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\controllers\\pubelacetatenicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|c:\\users\\magda\\desktop\\an iv\\automate si microprogramare\\proiect\\colectare-pubela\\colectare-date\\colectare-date\\controllers\\hartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CC485F5-A670-43DE-BFE9-A9E4C117EC8B}|colectare-date\\colectare-date.csproj|solutionrelative:colectare-date\\controllers\\hartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,6 +55,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ListaCetatenilor.cshtml",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\Cetatean\\ListaCetatenilor.cshtml",
+              "RelativeDocumentMoniker": "colectare-date\\Views\\Cetatean\\ListaCetatenilor.cshtml",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\Cetatean\\ListaCetatenilor.cshtml",
+              "RelativeToolTip": "colectare-date\\Views\\Cetatean\\ListaCetatenilor.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwC0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T14:24:09.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Colectari.cshtml",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\Cetatean\\Colectari.cshtml",
+              "RelativeDocumentMoniker": "colectare-date\\Views\\Cetatean\\Colectari.cshtml",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\Cetatean\\Colectari.cshtml",
+              "RelativeToolTip": "colectare-date\\Views\\Cetatean\\Colectari.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T14:24:01.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ColectareController.cs",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\ColectareController.cs",
+              "RelativeDocumentMoniker": "colectare-date\\Controllers\\ColectareController.cs",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\ColectareController.cs",
+              "RelativeToolTip": "colectare-date\\Controllers\\ColectareController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T13:59:26.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AtribuirePubela.cshtml",
+              "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\PubelaCetateni\\AtribuirePubela.cshtml",
+              "RelativeDocumentMoniker": "colectare-date\\Views\\PubelaCetateni\\AtribuirePubela.cshtml",
+              "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Views\\PubelaCetateni\\AtribuirePubela.cshtml",
+              "RelativeToolTip": "colectare-date\\Views\\PubelaCetateni\\AtribuirePubela.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T13:57:19.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "HartaController.cs",
               "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\HartaController.cs",
               "RelativeDocumentMoniker": "colectare-date\\Controllers\\HartaController.cs",
@@ -51,26 +119,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "PubelaCetateniController.cs",
               "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\PubelaCetateniController.cs",
               "RelativeDocumentMoniker": "colectare-date\\Controllers\\PubelaCetateniController.cs",
               "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\PubelaCetateniController.cs",
               "RelativeToolTip": "colectare-date\\Controllers\\PubelaCetateniController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwBMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T20:05:04.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "colectare-date\\Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\Magda\\Desktop\\AN IV\\Automate si microprogramare\\Proiect\\Colectare-Pubela\\colectare-date\\colectare-date\\Controllers\\LoginController.cs",
               "RelativeToolTip": "colectare-date\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T20:04:48.301Z",
               "EditorCaption": ""

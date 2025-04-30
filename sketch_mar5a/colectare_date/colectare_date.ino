@@ -15,7 +15,7 @@ MFRC522 rfid(SS_PIN, RST_PIN);
 WiFiClient client;
 HTTPClient http;
 
-const char* serverUrl = "http://10.14.10.37:5151/api/colectari";
+const char* serverUrl = "http://10.14.11.101:5151/api/colectari";
 
 // Stocare ID-uri cand WiFi nu functioneaza
 #define MAX_SAVED_IDS 10
@@ -71,7 +71,8 @@ void loop() {
   Serial.println("ID Tag: " + tag + " DATA COLECTARII: " +  getCurrentTime());
 
   // Formateaza datele JSON
-  String jsonPayload = "{\"PubelaId\": \"" + tag + "\", \"TimpColectare\": \"" + getCurrentTime() + "\"}";
+  String adresa = "Strada Test 123";
+  String jsonPayload = "{\"PubelaId\": \"" + tag + "\", \"TimpColectare\": \"" + getCurrentTime() + "\", \"Adresa\": \"" + adresa + "\"}";
 
   if (WiFi.status() == WL_CONNECTED) {
     http.begin(client, serverUrl);
